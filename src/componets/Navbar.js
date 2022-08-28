@@ -1,4 +1,5 @@
 import images from "../helpers/images";
+import { BiMenu } from "react-icons/bi";
 
 function Navbar() {
     return ( 
@@ -13,6 +14,7 @@ function Navbar() {
                     <li className="navbar__li"><a href="#" className="navbar__a">Account</a></li>
                     <li className="navbar__li"><a href="#" className="navbar__a navbar__a--btn">View plans</a></li>
                 </ul>
+                <BiMenu  className="navbar__menu"/>
             </nav>
         </header>
      );

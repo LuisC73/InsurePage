@@ -7,6 +7,12 @@
   @include mixin.flex(start, flex-start, column);
   padding: 2rem 12rem;
 
+  @include mixin.media() {
+    padding: .4rem;
+    @include mixin.flex(center, center, column);
+    text-align: center;
+  }
+
   &__h2 {
     font-family: vars.$fontHeading;
     font-size: 3.3rem;
@@ -23,17 +29,34 @@
       left: 0;
       opacity: 0.7;
     }
+
+    @include mixin.media() {
+      font-size: 2rem;
+
+      &::before {
+        width: 100%;
+      }
+    }
   }
 
   &__cards {
     margin-top: 3rem;
     @include mixin.flex(start, flex-start, row);
     column-gap: 1rem;
+
+    @include mixin.media() {
+      @include mixin.flex(center, center, column);
+    }
   }
 
   &__card {
     @include mixin.flex(start, flex-start, column);
     row-gap: 1rem;
+
+    @include mixin.media() {
+      @include mixin.flex(center, center, column);
+
+    }
   }
 
   &__img {
@@ -49,6 +72,8 @@
   &__p {
     font-size: 0.8rem;
     color: map-get(vars.$violes, "grayish");
+    width: 90%;
+    text-align: justify;
   }
 
   &__div {

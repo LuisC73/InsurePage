@@ -6,6 +6,11 @@
   @include mixin.flex(space-between, center, row);
   padding: 1rem 8rem;
   background-color: vars.$white;
+  position: relative;
+
+  @include mixin.media(){
+    padding: 1rem;
+  }
 
   &__figure {
     width: 5rem;
@@ -13,6 +18,14 @@
 
   &__ul {
     @include mixin.flex(space-between, center, row);
+
+    @include mixin.media(){
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      @include mixin.flex(space-between, flex-start, column);
+    }
   }
 
   &__li {
@@ -31,6 +44,18 @@
 
     &:hover{
       color: map-get(vars.$violes, "dark");
+    }
+
+  }
+
+  &__menu{
+    display: none;
+    width: fit-content;
+    font-size: 2rem;
+    border: 1px solid vars.$black;
+    padding: .2rem;
+    @include mixin.media(){
+      display: block;
     }
   }
 }
