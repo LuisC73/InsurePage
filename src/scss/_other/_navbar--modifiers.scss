@@ -11,5 +11,20 @@
       color: vars.$white;
       background: map-get(vars.$violes, "dark");
     }
+
+    @include mixin.media() {
+      border: 2px solid vars.$white;
+      color: vars.$white;
+      padding: .8rem 2rem;
+
+      &:hover{
+        color: map-get(vars.$violes, "dark");
+        background: vars.$white;
+      }
+    }
+  }
+
+  &__ul--active{
+    transform: translateX(0);
   }
 }

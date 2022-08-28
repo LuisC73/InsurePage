@@ -18,6 +18,14 @@
     height: 100%;
   }
 
+  @include mixin.media() {
+    padding: 1rem;
+
+    &::before {
+      background: url("../../assets/bg-pattern-footer-mobile.svg") no-repeat;
+    }
+  }
+
   &__top {
     width: 100%;
     @include mixin.flex(space-between, center, row);
@@ -31,6 +39,11 @@
       width: 100%;
       height: 0.1rem;
       background: hsl(0°, 0%, 91%);
+    }
+
+    @include mixin.media() {
+      @include mixin.flex(center, center, column);
+      row-gap: 1.8rem;
     }
   }
 
@@ -56,12 +69,22 @@
     width: 100%;
     @include mixin.grid(4, 1fr, 1rem);
     margin-top: 3.5rem;
+
+    @include mixin.media() {
+      @include mixin.grid(1, 1fr, 1rem);
+      align-content: center;
+      justify-content: center;
+    }
   }
 
   &__div {
     @include mixin.flex(start, flex-start, column);
     row-gap: 0.8rem;
     z-index: 2;
+
+    @include mixin.media() {
+      @include mixin.flex(center,center, column);
+    }
   }
 
   &__h4 {
