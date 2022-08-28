@@ -6,5 +6,10 @@
     border: 2px solid map-get(vars.$violes, "dark");
     color: map-get(vars.$violes, "dark");
     padding: .4rem .8rem;
+
+    &:hover{
+      color: vars.$white;
+      background: map-get(vars.$violes, "dark");
+    }
   }
 }

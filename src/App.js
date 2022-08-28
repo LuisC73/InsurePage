@@ -1,6 +1,7 @@
 import Home from "./componets/Home";
 import Navbar from "./componets/Navbar";
 import Work from "./componets/Work";
+import Footer from "./componets/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Home />
         <Work />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -43,7 +43,7 @@ function Work() {
         </div>
       </div>
       <div className="work__div">
-        <h4>
+        <h4 className="work__h4">
         Find out more about how we work
         </h4>
 

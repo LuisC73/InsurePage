@@ -8,6 +8,10 @@ import patternMobile from '../assets/bg-pattern-mobile-nav.svg';
 import snappyProcess from '../assets/icon-snappy-process.svg';
 import affordablePrices from '../assets/icon-affordable-prices.svg';
 import peopleFirst from '../assets/icon-people-first.svg';
+import facebook from '../assets/icon-facebook.svg';
+import instagram from '../assets/icon-instagram.svg';
+import twitter from '../assets/icon-twitter.svg';
+import pinterest from '../assets/icon-pinterest.svg';
 
 export default{
     "logo": logo,
@@ -19,5 +23,9 @@ export default{
     "pattern-mobile": patternMobile,
     "snappy-process": snappyProcess,
     "affordable-prices": affordablePrices,
-    "people-first": peopleFirst
+    "people-first": peopleFirst,
+    "facebook": facebook,
+    "twitter": twitter,
+    "pinterest": pinterest,
+    "instagram": instagram
 }

@@ -25,7 +25,12 @@
     font-size: 0.8rem;
     color: map-get(vars.$violes, "grayish");
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: .05rem;
+    transition: .4s;
+
+    &:hover{
+      color: map-get(vars.$violes, "dark");
+    }
   }
 }
