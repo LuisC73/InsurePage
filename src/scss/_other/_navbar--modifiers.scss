@@ -1,0 +1,10 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.navbar {
+  &__a--btn {
+    border: 2px solid map-get(vars.$violes, "dark");
+    color: map-get(vars.$violes, "dark");
+    padding: .4rem .8rem;
+  }
+}

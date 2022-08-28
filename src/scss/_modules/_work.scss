@@ -1,0 +1,17 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.work{
+    width: 100vw;
+    margin-top: 7rem;
+    @include mixin.flex(start,flex-start,column);
+    padding: 2rem 12rem;
+
+    &__cards{
+        @include mixin.flex(start,flex-start,row);
+    }
+
+    &__img{
+        width: 3rem;
+    }
+}

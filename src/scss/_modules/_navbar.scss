@@ -1,0 +1,31 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.navbar {
+  width: 100vw;
+  @include mixin.flex(space-between, center, row);
+  padding: 1rem 8rem;
+  background-color: vars.$white;
+
+  &__figure {
+    width: 5rem;
+  }
+
+  &__ul {
+    @include mixin.flex(space-between, center, row);
+  }
+
+  &__li {
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__a {
+    font-size: 0.8rem;
+    color: map-get(vars.$violes, "grayish");
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .05rem;
+  }
+}
